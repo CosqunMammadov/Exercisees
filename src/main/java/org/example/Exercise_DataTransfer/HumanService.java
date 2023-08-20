@@ -87,15 +87,16 @@ public class HumanService {
 
     public void updateName() throws SQLException, ClassNotFoundException {
         Connection con = Database.getConnection();
-        String sql = "SELECT name FROM people";
+        String sql = "SELECT name FROM people WHERE age > 50";
 
         PreparedStatement ps = con.prepareStatement(sql);
         ResultSet rs = ps.executeQuery();
 
         while (rs.next()) {
             String name = rs.getString("name");
-            PreparedStatement prs = con.prepareStatement("UPDATE people SET name = ? WHERE age > 50");
+            PreparedStatement prs = con.prepareStatement("UPDATE people SET name = ? WHERE name = ?");
             prs.setString(1, name + "50");
+            prs.setString(2, name);
             prs.executeUpdate();
         }
     }
