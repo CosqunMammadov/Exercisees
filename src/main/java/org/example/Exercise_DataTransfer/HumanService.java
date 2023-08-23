@@ -85,7 +85,7 @@ public class HumanService {
         return result;
     }
 
-    public void updateName() throws SQLException, ClassNotFoundException {
+    public void changeName() throws SQLException, ClassNotFoundException {
         Connection con = Database.getConnection();
         String sql = "SELECT name FROM people WHERE age > 50";
 

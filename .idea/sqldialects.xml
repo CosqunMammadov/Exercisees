@@ -2,5 +2,6 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/1df26db6-1467-4a7b-8122-57db2a1acc5b/console.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/Exercise_SmallRegistrationApp/service/Service.java" dialect="PostgreSQL" />
   </component>
 </project>

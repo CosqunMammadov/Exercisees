@@ -19,6 +19,6 @@ public class Main {
 //        System.out.println(humanService.orderByAge());
 
 //        humanService.delete("DELETE FROM people WHERE age > 40 AND age < 50");
-        humanService.updateName();
+//        humanService.changeName();
     }
 }
